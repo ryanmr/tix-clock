@@ -1,0 +1,17 @@
+body {
+	background-color: #222;
+}
+
+.block.active {
+	background-color: #ccc;
+}
+
+.minute-tens .block.active,
+.minute-ones .block.active {
+	background-color: #EC3634;
+}
+
+.hour-tens .block.active,
+.hour-ones .block.active {
+	background-color: #2CAEE4;
+}

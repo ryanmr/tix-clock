@@ -1,0 +1,78 @@
+.tix {
+	display: table;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tix .wrapper:before {
+}
+.tix .wrapper {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.tix:after {
+	clear: both;
+}
+
+.group {
+	float: left;
+	margin-left: 2em;
+	overflow: hidden;
+}
+.group:last-child:after {
+	clear: both;
+}
+.group:first-child {
+	margin-left: 0;
+}
+
+.hour-tens {}
+.hour-ones {}
+.minute-tens {}
+.minute-ones {}
+
+.group .block {
+	
+	margin: .75em;
+	width: 5em;
+	height: 5em;
+	float: left;
+}
+
+.block {
+	background-color: #555;
+}
+
+.block.active {
+	background-color: #ccc;
+}
+
+.hour-tens .block {
+	clear: both;
+}
+.minute-tens .block:nth-child(2n+1) {
+	clear: both;
+}
+.hour-ones .block:nth-child(3n+1),
+.minute-ones .block:nth-child(3n+1) {
+	clear: both;
+}
+
+@media (min-width:64em) { 
+	
+}
+
+@media (max-width:46em) {
+	.group .block {
+		width: 2em;
+		height: 2em;
+	}
+	.group {clear: both; margin-left: 0; margin-bottom: 1em;}
+	.hour-tens .block {clear: none;}
+}
+
+
