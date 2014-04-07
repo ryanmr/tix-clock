@@ -12,3 +12,12 @@ How It Works
 ------------
 
 Essentially all basic JavaScript using a few helpers from jQuery to set styles and get elements. The HTML is prewritten (unlike in the original version where it was generated on demand). The CSS has two components, a core stylesheet and a branding stylesheet to add a custom look.
+
+Todo
+----
+
+Some additions:
+* using an API to get the nearby weather
+* server side timer sycning
+* better non-hack solution to vertical and horizontal centering
+* true mobile/responsive support
